@@ -1,0 +1,7 @@
+C:\Users\Wojtek\source\repos\ProjektSemestralnyGra\bin\Debug\ProjektSemestralnyGra.exe.config
+C:\Users\Wojtek\source\repos\ProjektSemestralnyGra\bin\Debug\ProjektSemestralnyGra.exe
+C:\Users\Wojtek\source\repos\ProjektSemestralnyGra\bin\Debug\ProjektSemestralnyGra.pdb
+C:\Users\Wojtek\source\repos\ProjektSemestralnyGra\obj\Debug\ProjektSemestralnyGra.csprojAssemblyReference.cache
+C:\Users\Wojtek\source\repos\ProjektSemestralnyGra\obj\Debug\ProjektSemestralnyGra.csproj.CoreCompileInputs.cache
+C:\Users\Wojtek\source\repos\ProjektSemestralnyGra\obj\Debug\ProjektSemestralnyGra.exe
+C:\Users\Wojtek\source\repos\ProjektSemestralnyGra\obj\Debug\ProjektSemestralnyGra.pdb
