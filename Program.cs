@@ -16,14 +16,34 @@ namespace Gra
 
         static void start()
         {
+            Dictionary<int, int> trudnosc = new Dictionary<int, int>();
+            trudnosc.Add(1, 100);
+            trudnosc.Add(2, 500);
+            trudnosc.Add(3, 1000);
+
+
             Random rnd = new Random();
-            int liczbaDoZgadniecia = rnd.Next(1, 101);
+
             int pozostaleProby = 7;
             bool wygrana = false;
+            int liczbaDoZgadniecia = 1;
+
+            Console.Write("Wybierz poziom trudności(1/2/3): ");
+            int poziom = Convert.ToInt32(Console.ReadLine());
+            if (poziom >= 1 && poziom <= 3)
+            {
+               liczbaDoZgadniecia = rnd.Next(1, trudnosc[poziom]);
+            }
+            else
+            {
+                start();
+            }
+
+
 
             while (pozostaleProby > 0)
             {
-                Console.WriteLine("Zgadnij liczbę od 1 - 100.  Pozostałe próby: " + pozostaleProby);
+                Console.WriteLine("Zgadnij liczbę od 1 - " + trudnosc[poziom] + ".  Pozostałe próby: " + pozostaleProby);
 
                 int podanaLiczba = 0;
                 string input = Console.ReadLine();
@@ -33,7 +53,7 @@ namespace Gra
                     Console.WriteLine("Nie podano liczby.");
                 }
 
-                if (podanaLiczba > 1 && podanaLiczba < 101)
+                if (podanaLiczba > 1 && podanaLiczba < trudnosc[poziom])
                 {
                     if (podanaLiczba < liczbaDoZgadniecia)
                     {
